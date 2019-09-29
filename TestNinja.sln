@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.0.0
+MinimumVisualStudioVersion = 10.0.0.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja.UnitTests", "TestNinja.UnitTests\TestNinja.UnitTests.csproj", "{0B665F56-721B-4EA0-BB20-AFD9DB0A55F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja", "TestNinjas\TestNinja.csproj", "{78A52EB3-C2C9-46D9-BE06-ECBB2EA4E3B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B665F56-721B-4EA0-BB20-AFD9DB0A55F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B665F56-721B-4EA0-BB20-AFD9DB0A55F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B665F56-721B-4EA0-BB20-AFD9DB0A55F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B665F56-721B-4EA0-BB20-AFD9DB0A55F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A52EB3-C2C9-46D9-BE06-ECBB2EA4E3B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A52EB3-C2C9-46D9-BE06-ECBB2EA4E3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A52EB3-C2C9-46D9-BE06-ECBB2EA4E3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A52EB3-C2C9-46D9-BE06-ECBB2EA4E3B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
