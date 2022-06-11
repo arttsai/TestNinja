@@ -3,6 +3,9 @@ gnore Visual Studio temporary files, build results, and
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# remove Rider or VisualStudio internal files
+.idea/*
+
 # User-specific files
 *.rsuser
 *.suo
@@ -351,3 +354,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+.idea/.idea.TestNinja/.idea/workspace.xml

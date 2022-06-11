@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b613b956-d289-41f7-8ac7-d21d5a32b67e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/TestNinja.MyTests/Fundamentals/FizzBuzzTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNinja.MyTests/Fundamentals/LeapYearTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNinja.UnitTests/Fundamentals/LeapYearTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNinjas/Fundamentals/LeapYear.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNinja.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TestNinja.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNinjas/Fundamentals/LeapYear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestNinjas/Fundamentals/LeapYear.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +18,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/TestNinja.MyTests/Fundamentals/FizzBuzzTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestNinja.UnitTests/Mocking/BookingHelperTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestNinjas/Mocking/BookingHelper.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -100,7 +93,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
+  <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -128,9 +121,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue=".NET Project.Default" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -147,6 +137,7 @@
       <workItem from="1508952072060" duration="74000" />
       <workItem from="1569737382207" duration="2418000" />
       <workItem from="1653804747095" duration="3833000" />
+      <workItem from="1654909605353" duration="1052000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1507240218760</created>
@@ -181,6 +172,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
