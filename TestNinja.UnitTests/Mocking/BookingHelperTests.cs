@@ -15,9 +15,4 @@ namespace TestNinja.UnitTests.Mocking
     }
     
     // Check internet to find out how this overlapped thing is verified 
-    
-    [Test]
-    public void OverlappingBookingsExist_StatusIsCancelled_ReturnEmptyString() {
-    
-    }
 }

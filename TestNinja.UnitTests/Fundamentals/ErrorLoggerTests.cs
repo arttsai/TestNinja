@@ -1,4 +1,4 @@
-﻿using System;
+using Castle.Core.Internal;
 using NUnit.Framework;
 using TestNinja.Fundamentals;
 
@@ -8,23 +8,32 @@ namespace TestNinja.UnitTests.Fundamentals
     public class ErrorLoggerTests
     {
         [Test]
-        public void ErrorLogger_WhenCalled_GetLastError()
+        public void Log_ErrorIsEmpty_ThrowException()
         {
             var logger = new ErrorLogger();
-
-            logger.Log("a");
-
-            Assert.That(logger.LastError, Is.EqualTo("a")); 
+            Assert.Catch(() => { logger.Log(null); });
         }
 
         [Test]
-        [TestCase(null)]
-        [TestCase("")]
-        [TestCase(" ")]
-        public void ErrorLogger_NullOrWhiteSpaceErrorString_ThrowArgumentNullException(string error)
+        public void Log_Add2Logs_LastErrorIsCorrect()
         {
             var logger = new ErrorLogger();
-            Assert.That(() => logger.Log(error), Throws.ArgumentNullException); 
+            logger.Log("1");
+            logger.Log("2");
+            Assert.AreEqual(logger.LastError, "2");
         }
+
+        [Test]
+        public void Log_SubscribeEvent_GetInvoked()
+        {
+            var logger = new ErrorLogger();
+            var msg = "";
+            logger.ErrorLogged += (o, guid) => { msg = guid.ToString(); };
+
+            logger.Log("1");
+            
+            Assert.That(!msg.IsNullOrEmpty());
+        }
+        
     }
 }

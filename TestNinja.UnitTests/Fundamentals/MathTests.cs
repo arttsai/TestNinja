@@ -1,44 +1,54 @@
-﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 using NUnit.Framework;
+using TestNinja.Fundamentals;
 
 namespace TestNinja.UnitTests.Fundamentals
 {
     [TestFixture]
     public class MathTests
     {
-        private TestNinja.Fundamentals.Math _math;
+        private Math _math;
 
         [SetUp]
-        public void SetUp()
+        public void Setup()
         {
-            _math = new TestNinja.Fundamentals.Math();
+            _math = new Math();
+        }
+        
+        [Test]
+        [TestCase(1, 1, 2)]
+        [TestCase(2, 2, 4)]
+        public void Add_WhenInput_ExpectCorrect(int a, int b, int result)
+        {
+            Assert.That(_math.Add(a, b) == result);
         }
 
-
-        [Test]
-        public void Add_WhenCalled_ReturnsSum()
-        {
-            var result = _math.Add(1, 2);
-
-            Assert.That(result, Is.EqualTo(3)); 
-        }
-
-        [Test]
+        [TestCase(1, 1, 1)]
         [TestCase(1, 2, 2)]
         [TestCase(2, 1, 2)]
-        [TestCase(2, 2, 2)]
-        public void Max_WhenCalled_ReturnsRightAnswer(int a, int b, int c)
+        public void Max_WhenInput_ExpectCorrectResult(int a, int b, int result)
         {
-            var result = _math.Max(a, b);
-            Assert.That(result, Is.EqualTo(c));
+            Assert.That(_math.Max(a, b) == result);
         }
 
-        [Test]
-        public void GetOddNumbers_WhenCalled_Returns()
+        [TestCase(1, new int[]{1})]
+        [TestCase(2, new int[] {1})]
+        [TestCase(3, new int[]{1,3})]
+        [TestCase(9, new int[]{1,3,5,7,9})]
+        [TestCase(10, new int[]{1,3,5,7,9})]
+        public void GetOddNumbers_WhenInput_ExpectCorrectResult(int a, int[] oddNumberArray)
         {
-            IEnumerable<int> result = _math.GetOddNumbers(5);
-            Assert.That(result, Is.EqualTo(new[] { 1, 3, 5 }));
+            var result = new List<int>();
+            foreach (var i in _math.GetOddNumbers(a))
+            {
+                result.Add(i);
+            }
+
+            var isEqual = result.SequenceEqual(oddNumberArray);
+            Assert.AreEqual(isEqual, true);
         }
+        
     }
 }
