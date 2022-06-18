@@ -2,21 +2,39 @@
 
 namespace TestNinja.Mocking
 {
-    public class InstallerHelper
+    public interface IDownloader
+    {
+        void DownloadFile(string customerName, string installerName);
+    }
+
+    public class Downloader : IDownloader
     {
         private string _setupDestinationFile;
 
-        public bool DownloadInstaller(string customerName, string installerName)
+        public void DownloadFile(string customerName, string installerName)
         {
             var client = new WebClient();
+            client.DownloadFile(
+                string.Format("http://example.com/{0}/{1}", customerName, installerName),
+                _setupDestinationFile
+            );
+        }
+    }
+
+    public class InstallerHelper 
+    {
+        private readonly IDownloader _downloader;
+        
+        public InstallerHelper(IDownloader downloader)
+        {
+            _downloader = downloader;
+        }
+
+        public bool DownloadInstaller(string customerName, string installerName)
+        {
             try
             {
-                client.DownloadFile(
-                    string.Format("http://example.com/{0}/{1}",
-                        customerName,
-                        installerName),
-                    _setupDestinationFile);
-
+                _downloader.DownloadFile(customerName, installerName);
                 return true;
             }
             catch (WebException)
