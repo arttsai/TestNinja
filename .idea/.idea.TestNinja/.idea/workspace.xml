@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b613b956-d289-41f7-8ac7-d21d5a32b67e" name="Default" comment="">
+    <list default="true" id="b613b956-d289-41f7-8ac7-d21d5a32b67e" name="Default" comment="Add test goal">
+      <change afterPath="$PROJECT_DIR$/TestNinja.UnitTests/Mocking/VideoServiceTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNinjas/Mocking/VideoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestNinjas/Mocking/VideoService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
     <setting file="file://$PROJECT_DIR$/TestNinja.MyTests/Fundamentals/FizzBuzzTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestNinja.UnitTests/Mocking/BookingHelperTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestNinjas/Mocking/BookingHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/art/Practice/c#/TestNinja/TestNinjas/Mocking/VideoService.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -93,7 +96,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Default">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -141,7 +144,7 @@
       <workItem from="1655514430061" duration="5537000" />
       <workItem from="1655523158500" duration="376000" />
       <workItem from="1656120777361" duration="462000" />
-      <workItem from="1656727412080" duration="635000" />
+      <workItem from="1656727412080" duration="5828000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1507240218760</created>
@@ -178,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655522120939</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add test goal">
+      <created>1656728845772</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656728845772</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +274,8 @@
     <MESSAGE value="fix .gitignore, comment leapyear.cs" />
     <MESSAGE value="today's practice" />
     <MESSAGE value="Add InstallerHelperTests.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add InstallerHelperTests.cs" />
+    <MESSAGE value="Add test goal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test goal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
