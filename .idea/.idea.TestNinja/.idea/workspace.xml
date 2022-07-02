@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b613b956-d289-41f7-8ac7-d21d5a32b67e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/TestNinja.UnitTests/Mocking/InstallerHelperTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestNinja/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNinja.UnitTests/Fundamentals/ErrorLoggerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestNinja.UnitTests/Fundamentals/ErrorLoggerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNinjas/Mocking/InstallerHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestNinjas/Mocking/InstallerHelper.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
+  <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -124,9 +121,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue=".NET Project.Default" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -144,7 +138,10 @@
       <workItem from="1569737382207" duration="2418000" />
       <workItem from="1653804747095" duration="3833000" />
       <workItem from="1654909605353" duration="9446000" />
-      <workItem from="1655514430061" duration="4597000" />
+      <workItem from="1655514430061" duration="5537000" />
+      <workItem from="1655523158500" duration="376000" />
+      <workItem from="1656120777361" duration="462000" />
+      <workItem from="1656727412080" duration="635000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1507240218760</created>
@@ -174,15 +171,81 @@
       <option name="project" value="LOCAL" />
       <updated>1654921256310</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add InstallerHelperTests.cs">
+      <created>1655522120939</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655522120939</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="156" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="417" />
+    <coverage-tree-state>
+      <expand>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 63% 130/353" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 63% 130/353" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TestNinja 40% 122/204" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 63% 130/353" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TestNinja 40% 122/204" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TestNinja 40% 122/204" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 63% 130/353" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TestNinja 40% 122/204" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TestNinja 40% 122/204" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Mocking 19% 79/98" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 63% 130/353" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TestNinja 40% 122/204" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TestNinja 40% 122/204" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Mocking 19% 79/98" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="InstallerHelper 100% 0/12" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 63% 130/353" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TestNinja 40% 122/204" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TestNinja 40% 122/204" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Mocking 19% 79/98" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Downloader 0% 4/4" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+      </expand>
+      <select />
+    </coverage-tree-state>
+  </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -200,7 +263,8 @@
     <MESSAGE value="." />
     <MESSAGE value="fix .gitignore, comment leapyear.cs" />
     <MESSAGE value="today's practice" />
-    <option name="LAST_COMMIT_MESSAGE" value="today's practice" />
+    <MESSAGE value="Add InstallerHelperTests.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add InstallerHelperTests.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

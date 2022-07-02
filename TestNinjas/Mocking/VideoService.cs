@@ -24,6 +24,9 @@ namespace TestNinja.Mocking
             
             using (var context = new VideoContext())
             {
+                // 測: 
+                // 1. !video.IsProcessed 的項目，都有被挑到 (到  videoIds) 
+                // 2. video.IsProcessed = true 的項目，都沒有被挑到 
                 var videos = 
                     (from video in context.Videos
                     where !video.IsProcessed
